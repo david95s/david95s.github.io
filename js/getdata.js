@@ -66,7 +66,7 @@ export default class Objeto {
                     <p class="name">${login}</p>
                     <div class="after_name">
                         <div class="top">
-                            <img src="${avatar_url}" alt="" height="330">
+                            <img src="${avatar_url}" alt="" height="300">
                         </div>
                         <div class="content">    
                             <p class="title">Dados:</p>
