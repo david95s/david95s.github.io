@@ -1,0 +1,142 @@
+body {
+    background-color: rgb(139 141 142);
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.erro {
+    position: absolute;
+    color: #856404;
+    background-color: #f0e1b3;
+    border: solid 1px #f0e1b3;
+    border-radius: 1px;
+    width: 90%;
+    right: 20px;
+    top: 20px;
+    padding: 20px;
+    text-align: center;
+    display: none;
+}
+
+.erro.ativo {
+    animation: animax .5s forwards;
+    display: block;
+}
+
+@keyframes animax {
+    0% {
+        transform: translate3d(30px, 0px, 0);
+        opacity: 0;
+    }
+    100% {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+main.princ {
+    width: 99%;
+    margin: 10px auto;
+    padding: 10px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-radius: 3px;
+}
+
+main.princ.none {
+    display: none;
+}
+
+section {
+    background-color: rgb(255, 255, 255);
+    padding-top: 0;
+    width: 370px;
+    margin-bottom: 40px;
+    border-radius: 8px;
+    opacity: 0.85;
+    transition: .3s;
+    box-shadow: 2px 2px 8px -2px black;
+}
+section:hover{
+    opacity: 1;
+}
+section:hover p.name{
+    background-color: #fb1;
+}
+
+
+p.name{
+    margin: 1px auto;
+    margin-top: 0px;
+    padding: 14px;
+    text-align: center;
+    border-top-left-radius: 8px;
+    border-top-right-radius:8px;
+    box-shadow: 0px 0px 5px -1px rgb(0, 0, 0);
+    background-color: rgb(211, 156, 17);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+    transition: .3s;
+}
+.top {
+    margin: 0 auto;
+    padding: 8px;
+    text-align: center;
+    border-radius: 3px;
+}
+
+
+.content {
+    height: 340px;
+    border-top: solid 2px black;
+    border-bottom: solid 2px black;
+    padding: 4px;
+    width: 90%;
+    margin: 8px auto;
+}
+p.title{
+    text-align: left;
+    padding: 4px 0;
+    margin-bottom: 3px;
+    font-size: 17px;
+    font-family: monospace;
+    color: rgb(226, 43, 43);
+    font-weight: bolder;
+}
+p.p_data{
+    padding: 8px;
+    font-size: 14px;
+    margin-bottom: 3px;
+    background-color: rgb(29, 29, 29);
+    border: solid 1px rgb(29, 29, 29);
+    color: white;
+    border-radius: 3px;
+}
+span.title_data{
+    color: #fb1;
+}
+.after_name{
+    padding: 5px;
+}
+img{
+    border-radius: 3px;
+    box-shadow: 0px 0px 0px 5px black;
+}
+
